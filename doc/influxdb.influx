@@ -1,0 +1,11 @@
+CREATE USER admin WITH PASSWORD '<password>' WITH ALL PRIVILEGES
+
+CREATE USER sensor WITH PASSWORD '<password>'
+GRANT ALL ON mqtt TO sensor
+
+CREATE USER grafana WITH PASSWORD 'grafana'
+GRANT READ ON mqtt TO grafana
+
+
+# change password:
+SET PASSWORD FOR <user> = 'password'

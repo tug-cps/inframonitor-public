@@ -1,0 +1,14 @@
+FROM python:3.10.7-slim
+
+WORKDIR /app
+RUN pip install --upgrade pip
+COPY common/requirements.txt /tmp/requirements.txt
+RUN pip install -r /tmp/requirements.txt
+
+COPY restapi/requirements.txt restapi/
+RUN pip install -r restapi/requirements.txt
+
+COPY common common/
+COPY restapi restapi
+HEALTHCHECK CMD python -c "import requests; requests.get('http://localhost')" || exit 1
+CMD ["/app/restapi/run.sh"]

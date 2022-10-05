@@ -1,0 +1,168 @@
+version: '3.5'
+
+services:
+  # Visualization and data access
+  ## Nginx reverse proxy and SSL termination proxy for API and Grafana
+  nginx:
+    image: nginx:stable
+    ports: [ "3000:3000" ]
+    networks: [ inframonitor-grafana, inframonitor-api ]
+    healthcheck: { test: [ "CMD", "service", "nginx", "status" ] }
+    depends_on: [ grafana, api ]
+
+  ## REST HTTP API
+  api:
+    build: { context: inframonitor, dockerfile: Dockerfile-api }
+    ports: [ "5050:80" ]
+    depends_on: [ mongodb, influxdb ]
+    networks: [ inframonitor-mongo, inframonitor-influx, inframonitor-api, inframonitor-mqtt ]
+    environment: [ TZ, MONGO_URI, FLASK_ENV ]
+
+  ## Grafana Time series visualization
+  grafana:
+    build: { context: grafana }
+    ports: [ "3001:3000" ]
+    depends_on: [ influxdb, mongodb-proxy, grafana-renderer ]
+    volumes: [ inframonitor-grafana:/var/lib/grafana ]
+    networks: [ inframonitor-influx, inframonitor-mongo-proxy, inframonitor-grafana, loki ]
+    environment:
+      - TZ
+      - GF_RENDERING_CALLBACK_URL=http://grafana:3000/
+      - GF_RENDERING_SERVER_URL=http://grafana-renderer:8081/render
+
+  grafana-renderer:
+    image: grafana/grafana-image-renderer:3.4.2
+    networks: [ inframonitor-grafana ]
+
+  ## Proxy for the unofficial Grafana MongoDB datasource plugin
+  mongodb-proxy:
+    build: { context: grafana, dockerfile: Dockerfile-proxy }
+    ports: [ "3333:3333" ]
+    depends_on: [ mongodb ]
+    networks: [ inframonitor-mongo-proxy, inframonitor-mongo ]
+
+  # Databases
+  ## InfluxDB Time Series Database
+  influxdb:
+    image: influxdb:1.8
+    ports: [ "8086:8086" ]
+    volumes: [ inframonitor-influxdb:/var/lib/influxdb ]
+    networks: [ inframonitor-influx ]
+    healthcheck: { test: [ "CMD", "curl", "--fail", "-k", "https://influxdb:8086/health" ] }
+
+  ## MongoDB NoSql Database
+  mongodb:
+    image: mongo:5.0
+    ports: [ "27017:27017" ]
+    volumes: [ inframonitor-mongodb:/data/db, inframonitor-mongodb-configdb:/data/configdb ]
+    networks: [ inframonitor-mongo ]
+    healthcheck: { test: echo 'db.runCommand("ping").ok' | mongo mongodb:27017/test --quiet }
+
+  ## Loki log Database
+  loki:
+    image: grafana/loki:2.4.2
+    volumes: [ loki:/loki ]
+    ports: [ "3100:3100" ]
+    restart: unless-stopped
+    networks: [ loki ]
+
+  # MQTT                                                                                                               #
+  ## Mosquitto MQTT broker
+  mqtt:
+    image: eclipse-mosquitto:2.0
+    ports: [ "1883:1883", "8883:8883" ]
+    networks: [ inframonitor-mqtt ]
+    healthcheck: { test: mosquitto_sub -t '$$SYS/#' -C 1 -i 'mosquitto_health' | grep -v Error || exit 1 }
+    volumes: [ inframonitor-mosquitto-persist:/mosquitto/data, inframonitor-mosquitto-log:/mosquitto/log ]
+
+  # Data Agents                                                                                                        #
+  ## MQTTAgent, writes data from mqtt to db & tsdb
+  mqttagent:
+    build: { context: inframonitor, args: [ service_name=mqttagent ] }
+    depends_on: [ mqtt, mongodb, influxdb ]
+    networks: [ inframonitor-mqtt, inframonitor-mongo, inframonitor-influx ]
+    environment: [ TZ ]
+
+  ## HTTPAgent, polls data from HTTP Api
+  httpagent:
+    build: { context: inframonitor, args: [ service_name=httpagent ] }
+    depends_on: [ mongodb ]
+    networks: [ inframonitor-mongo ]
+    environment: [ TZ ]
+
+  ## MongoAgent, writes data from MongoDB to InfluxDB
+  mongoagent:
+    build: { context: inframonitor, args: [ service_name=persistence ] }
+    depends_on: [ mongodb, influxdb ]
+    networks: [ inframonitor-mongo, inframonitor-influx ]
+    environment: [ TZ ]
+
+  ## Promtail, writes logs to loki
+  promtail:
+    image: grafana/promtail:2.4.2
+    volumes:
+      - /var/log/journal/:/var/log/journal/
+      - /run/log/journal/:/run/log/journal/
+      - /etc/machine-id:/etc/machine-id
+      - ./promtail:/etc/promtail
+    restart: unless-stopped
+    command: -config.file=/etc/promtail/promtail-config.yml
+    networks: [ loki ]
+
+  # Fault detection
+  ## Predicts data to tsdb at regular intervals
+  prediction:
+    build: { context: inframonitor, args: [ base_image=tensorflow/tensorflow:2.7.0, service_name=prediction ] }
+    depends_on: [ mongodb, influxdb ]
+    networks: [ inframonitor-mongo, inframonitor-influx ]
+    environment: [ TZ ]
+
+  ## Compares prediction and actual values and writes a status value
+  monitor:
+    build: { context: inframonitor, args: [ service_name=monitor ] }
+    depends_on: [ mongodb, influxdb ]
+    networks: [ inframonitor-mongo, inframonitor-influx ]
+    environment: [ TZ ]
+
+  ## Compares status values and creates reports about changes
+  alert:
+    build: { context: inframonitor, args: [ service_name=alert ] }
+    depends_on: [ mongodb, influxdb ]
+    networks: [ inframonitor-mongo, inframonitor-influx ]
+    environment: [ TZ ]
+
+  # Misc
+  ## Runs scripts at regular intervals / Resets counters to zero
+  reset:
+    build: { context: inframonitor, args: [ service_name=reset ] }
+    depends_on: [ mongodb ]
+    networks: [ inframonitor-mongo ]
+    environment: [ TZ ]
+
+  # Administration
+  ## Admin web interface
+  admin:
+    build: { context: inframonitor, dockerfile: Dockerfile-admin }
+    ports: [ "5000:80" ]
+    depends_on: [ mongodb, influxdb ]
+    networks: [ inframonitor-mongo, inframonitor-influx ]
+    environment: [ TZ, MONGO_URI, FLASK_ENV ]
+
+volumes:
+  inframonitor-grafana: { name: grafana }
+  inframonitor-influxdb: { name: influxdb }
+  inframonitor-mongodb: { name: mongodb }
+  inframonitor-mongodb-configdb:
+  inframonitor-mosquitto-persist:
+  inframonitor-mosquitto-log:
+  loki:
+
+networks:
+  inframonitor-influx:
+  inframonitor-mongo:
+  inframonitor-mongo-proxy:
+  inframonitor-mqtt:
+  inframonitor-grafana:
+  inframonitor-api:
+  loki:
+

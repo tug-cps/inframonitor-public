@@ -1,0 +1,21 @@
+name: Docker Compose
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  test:
+    name: Build and run
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Validate docker-compose file
+        run: ./docker-compose-dev.sh config
+      - name: Build docker-compose
+        run: DOCKER_BUILDKIT=1 ./docker-compose-dev.sh build
+      - name: Start docker-compose
+        run: ./docker-compose-dev.sh up -d
+      - name: Print container status
+        run: docker ps

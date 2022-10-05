@@ -1,0 +1,14 @@
+FROM python:3.11.0rc2-slim
+
+WORKDIR /app
+RUN pip install --upgrade pip
+COPY common/requirements.txt /tmp/requirements.txt
+RUN pip install -r /tmp/requirements.txt
+
+COPY admin/requirements.txt /tmp/requirements-admin.txt
+RUN pip install -r /tmp/requirements-admin.txt
+
+COPY /common ./common
+COPY /admin ./admin
+HEALTHCHECK CMD python -c "import requests; requests.get('http://localhost')" || exit 1
+CMD ["/app/admin/run.sh"]

@@ -1,0 +1,1492 @@
+@prefix brick: <https://brickschema.org/schema/Brick#> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+
+<urn:ngsi-ld:Battery:IN_IN160_LORA__TEIB001__P01_1_Bat> a brick:Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIB001__P01_1_Bat" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Battery:IN_IN160_LORA__TEIB002__P01_1_Bat> a brick:Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIB002__P01_1_Bat" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Battery:IN_IN160_LORA__TEIB003__P01_1_Bat> a brick:Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIB003__P01_1_Bat" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Battery:IN_IN160_LORA__TEIS001__B01_3_Bat> a brick:Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIS001__B01_3_Bat" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Battery:IN_IN160_LORA__TEIS002__B01_3_Bat> a brick:Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIS002__B01_3_Bat" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Battery:IN_IN160_LORA__TEIS003__B01_3_Bat> a brick:Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIS003__B01_3_Bat" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Battery:IN_IN160_LORA__TEIS004__B01_3_Bat> a brick:Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIS004__B01_3_Bat" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Battery:IN_IN160_LORA__TEIS005__B01_3_Bat> a brick:Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIS005__B01_3_Bat" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Battery:IN_IN160_LORA__TEIS006__B01_3_Bat> a brick:Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIS006__B01_3_Bat" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Battery:IN_IN160_LORA__TEIS007__B01_3_Bat> a brick:Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIS007__B01_3_Bat" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Battery:IN_IN160_LORA__TEIS008__B01_3_Bat> a brick:Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIS008__B01_3_Bat" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Battery:IN_IN160_LORA__TEIS009__B01_3_Bat> a brick:Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIS009__B01_3_Bat" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Battery:IN_IN160_LORA__TETBDW001__N01_3_Bat> a brick:Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TETBDW001__N01_3_Bat" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Battery:IN_IN160_LORA__TETBDW002__N01_3_Bat> a brick:Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TETBDW002__N01_3_Bat" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Battery:IN_IN160_LORA__TETBDW003__N01_3_Bat> a brick:Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TETBDW003__N01_3_Bat" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Battery:IN_IN160_LORA__TETBDW004__N01_3_Bat> a brick:Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TETBDW004__N01_3_Bat" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Battery:IN_IN160_LORA__TETBDW005__N01_3_Bat> a brick:Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TETBDW005__N01_3_Bat" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Battery:IN_IN160_LORA__TETBDW006__N01_3_Bat> a brick:Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TETBDW006__N01_3_Bat" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Battery:IN_IN160_LORA__TETBDW007__N01_3_Bat> a brick:Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TETBDW007__N01_3_Bat" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Battery:IN_IN160_LORA__TETBDW008__N01_3_Bat> a brick:Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TETBDW008__N01_3_Bat" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Battery:IN_IN160_LORA__TETBDW009__N01_3_Bat> a brick:Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TETBDW009__N01_3_Bat" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:BatteryVoltage:IN_IN160_LORA__TETBDW001__N01_4_BatV> a brick:Power_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TETBDW001__N01_4_BatV" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:BatteryVoltage:IN_IN160_LORA__TETBDW002__N01_4_BatV> a brick:Power_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TETBDW002__N01_4_BatV" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:BatteryVoltage:IN_IN160_LORA__TETBDW003__N01_4_BatV> a brick:Power_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TETBDW003__N01_4_BatV" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:BatteryVoltage:IN_IN160_LORA__TETBDW004__N01_4_BatV> a brick:Power_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TETBDW004__N01_4_BatV" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:BatteryVoltage:IN_IN160_LORA__TETBDW005__N01_4_BatV> a brick:Power_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TETBDW005__N01_4_BatV" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:BatteryVoltage:IN_IN160_LORA__TETBDW006__N01_4_BatV> a brick:Power_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TETBDW006__N01_4_BatV" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:BatteryVoltage:IN_IN160_LORA__TETBDW007__N01_4_BatV> a brick:Power_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TETBDW007__N01_4_BatV" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:BatteryVoltage:IN_IN160_LORA__TETBDW008__N01_4_BatV> a brick:Power_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TETBDW008__N01_4_BatV" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:BatteryVoltage:IN_IN160_LORA__TETBDW009__N01_4_BatV> a brick:Power_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TETBDW009__N01_4_BatV" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Building:Inffeldgasse16c> a brick:Building ;
+    brick:hasAddress "Inffeldgasse 16c, Graz 8010" .
+
+<urn:ngsi-ld:Building:Inffeldgasse25d> a brick:Building ;
+    brick:hasAddress "Inffeldgasse 25d, Graz 8010" .
+
+<urn:ngsi-ld:Building:Inffeldgasse28> a brick:Building ;
+    brick:hasAddress "Inffeldgasse 28, Graz 8010" .
+
+<urn:ngsi-ld:Building:Lessingstrasse25> a brick:Building ;
+    brick:hasAddress "Lessingstraße 25, Graz 8010" .
+
+<urn:ngsi-ld:Building:Petersgasse136> a brick:Building ;
+    brick:hasAddress "Petersgasse 136, Graz 8010" .
+
+<urn:ngsi-ld:Building:Steyrergasse30> a brick:Building ;
+    brick:hasAddress "Steyrergasse 30, Graz 8010" .
+
+<urn:ngsi-ld:Building:Stremayrgasse10> a brick:Building ;
+    brick:hasAddress "Stremayrgasse 10, Graz 8010" .
+
+<urn:ngsi-ld:CO2:IN_IN160_LORA__TEIS001__B01_4_Co2> a brick:CO2_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIS001__B01_4_Co2" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:CO2:IN_IN160_LORA__TEIS002__B01_4_Co2> a brick:CO2_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIS002__B01_4_Co2" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:CO2:IN_IN160_LORA__TEIS003__B01_4_Co2> a brick:CO2_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIS003__B01_4_Co2" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:CO2:IN_IN160_LORA__TEIS004__B01_4_Co2> a brick:CO2_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIS004__B01_4_Co2" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:CO2:IN_IN160_LORA__TEIS005__B01_4_Co2> a brick:CO2_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIS005__B01_4_Co2" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:CO2:IN_IN160_LORA__TEIS006__B01_4_Co2> a brick:CO2_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIS006__B01_4_Co2" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:CO2:IN_IN160_LORA__TEIS007__B01_4_Co2> a brick:CO2_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIS007__B01_4_Co2" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:CO2:IN_IN160_LORA__TEIS008__B01_4_Co2> a brick:CO2_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIS008__B01_4_Co2" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:CO2:IN_IN160_LORA__TEIS009__B01_4_Co2> a brick:CO2_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIS009__B01_4_Co2" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Contact:IN_IN160_LORA__TEIB001__P01_3_Counter_Total_A> a brick:Contact_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIB001__P01_3_Counter_Total_A" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Contact:IN_IN160_LORA__TEIB001__P01_4_Counter_Total_B> a brick:Contact_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIB001__P01_4_Counter_Total_B" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Contact:IN_IN160_LORA__TEIB002__P01_3_Counter_Total_A> a brick:Contact_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIB002__P01_3_Counter_Total_A" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Contact:IN_IN160_LORA__TEIB002__P01_4_Counter_Total_B> a brick:Contact_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIB002__P01_4_Counter_Total_B" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Contact:IN_IN160_LORA__TEIB003__P01_3_Counter_Total_A> a brick:Contact_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIB003__P01_3_Counter_Total_A" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Contact:IN_IN160_LORA__TEIB003__P01_4_Counter_Total_B> a brick:Contact_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIB003__P01_4_Counter_Total_B" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:ContactStatus:IN_IN160_LORA__TEIB001__P01_2_Status_Sensor> a brick:Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIB001__P01_2_Status_Sensor" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:ContactStatus:IN_IN160_LORA__TEIB002__P01_2_Status_Sensor> a brick:Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIB002__P01_2_Status_Sensor" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:ContactStatus:IN_IN160_LORA__TEIB003__P01_2_Status_Sensor> a brick:Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIB003__P01_2_Status_Sensor" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:DewPoint:IN1IN13DG_WETT_S02_B02_DewPoint> a brick:Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse13> ;
+    brick:timeseries [ brick:hasTimeseriesId "IN1IN13DG_WETT_S02_B02_DewPoint" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:10_090101> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Kopernikusgasse24> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "10_090101" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:10_090102> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Kopernikusgasse24> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "10_090102" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:10_090103> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Stremayrgasse9> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "10_090103" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:10_090104> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Stremayrgasse9> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "10_090104" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:10_090110> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Stremayrgasse9> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "10_090110" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:10_090111> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Stremayrgasse9> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "10_090111" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:10_090120> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Stremayrgasse9> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "10_090120" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:10_090130> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Stremayrgasse9> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "10_090130" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:10_090401> a brick:Energy_Usage_Sensor ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "10_090401" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:10_100110> a brick:Energy_Usage_Sensor ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "10_100110" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:10_100120> a brick:Energy_Usage_Sensor ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "10_100120" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:10_120110> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Petersgasse12> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "10_120110" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:10_120120> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Petersgasse12> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "10_120120" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:10_140110> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Petersgasse14> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "10_140110" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:10_140111> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Petersgasse14> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "10_140111" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:10_140120> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Petersgasse14> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "10_140120" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:10_160110> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Stremayrgasse16> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "10_160110" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:10_160111> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Stremayrgasse16> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "10_160111" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:10_160120> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Stremayrgasse16> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "10_160120" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:10_160121> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Stremayrgasse16> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "10_160121" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:10_160122> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Stremayrgasse16> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "10_160122" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:10_160123> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Stremayrgasse16> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "10_160123" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:10_161110> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Petersgasse16> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "10_161110" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:10_161120> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Petersgasse16> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "10_161120" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:10_161121> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Petersgasse16> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "10_161121" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:10_300110> a brick:Energy_Usage_Sensor ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "10_300110" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:10_300111> a brick:Energy_Usage_Sensor ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "10_300111" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:10_300120> a brick:Energy_Usage_Sensor ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "10_300120" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:10_300121> a brick:Energy_Usage_Sensor ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "10_300121" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:10_300122> a brick:Energy_Usage_Sensor ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "10_300122" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_000100> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse12> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_000100" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_090112> a brick:Energy_Usage_Sensor ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_090112" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_100110> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse10> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_100110" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_100120> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse10> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_100120" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_120110> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse12> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_120110" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_120120> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse12> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_120120" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_120210> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse12> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_120210" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_120310> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse12> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_120310" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_130110> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse13> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_130110" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_130111> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse13> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_130111" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_130120> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse13> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_130120" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_130130> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse13> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_130130" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_130131> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse13> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_130131" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_130132> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse13> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_130132" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_160110> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse16> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:isPointOf <urn:ngsi-ld:Building:Inffeldgasse16> ;
+    brick:timeseries [ brick:hasTimeseriesId "20_160110" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_160111> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse16> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:isPointOf <urn:ngsi-ld:Building:Inffeldgasse16> ;
+    brick:timeseries [ brick:hasTimeseriesId "20_160111" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_160115> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse16> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:isPointOf <urn:ngsi-ld:Building:Inffeldgasse16> ;
+    brick:timeseries [ brick:hasTimeseriesId "20_160115" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_160120> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse16> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:isPointOf <urn:ngsi-ld:Building:Inffeldgasse16> ;
+    brick:timeseries [ brick:hasTimeseriesId "20_160120" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_180110> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse18> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_180110" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_180130> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse18> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_180130" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_230110> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse23> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_230110" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_230120> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse23> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_230120" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_240110> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse24> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_240110" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_240120> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse24> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_240120" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_240125> a brick:Energy_Usage_Sensor ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_240125" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_251101> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse25a> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_251101" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_251102> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse25a> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_251102" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_251110> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse25a> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_251110" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_251120> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse25a> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_251120" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_251121> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse25a> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_251121" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_251151> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse25a> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_251151" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_251152> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse25a> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_251152" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_251153> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse25a> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_251153" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_251154> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse25a> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_251154" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_251155> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse25a> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_251155" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_251156> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse25a> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_251156" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_251157> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse25a> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_251157" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_251164> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse25a> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_251164" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_251177> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse25a> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_251177" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_251178> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse25a> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_251178" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_251179> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse25a> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_251179" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_251181> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse25a> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_251181" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_251182> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse25a> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_251182" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_252110> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse25b> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_252110" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_252120> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse25b> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_252120" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_252153> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse25b> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_252153" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_252178> a brick:Energy_Usage_Sensor ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_252178" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_255101> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse25e> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_255101" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_255103> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse25e> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_255103" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_255104> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse25e> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_255104" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_255120> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse25e> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_255120" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_256125> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse25f> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_256125" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_280110> a brick:Energy_Usage_Sensor ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_280110" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_330110> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse33> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_330110" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_330120> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse33> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_330120" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_330121> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse33> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_330121" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_330122> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse33> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_330122" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_330123> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse33> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_330123" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_330124> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse33> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_330124" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_330125> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse33> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_330125" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:20_999100> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse11> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_999100" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:30_120110> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Rechbauerstrasse12> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "30_120110" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:30_120111> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Rechbauerstrasse12> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "30_120111" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:30_120112> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Rechbauerstrasse12> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "30_120112" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:IN11_SPV60> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse11> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In11K1_E930_S94_P17_Nrg" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:IN11_ST1> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse11> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In11K1_E930_S94_P10_Nrg" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:IN11_ST2> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse11> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In11K1_E930_S94_P11_Nrg" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:IN11_ST3> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse11> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In11K1_E930_S94_P15_Nrg" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:IN15_ST2H2W> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse15> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "IN1IN21K1_A300__P003_Nrg" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:IN15_ST3_4> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse15> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "IN1IN21K1_A310__P002_Nrg" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:IN17_SGES> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse17> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_170110" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:IN21AB_ST213> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse21> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "IN1IN21K1_A310__P006_Nrg" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:IN21AB_ST3_3> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse21> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "IN1IN21K1_A310__P014_Nrg" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:IN21_ST1> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse21> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "IN1IN21K1_A310__P011_Nrg" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:IN21_ST2> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse21> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "IN1IN21K1_A300__P008_Nrg" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:IN21_ST3> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse21> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "IN1IN21K1_A310__P010_Nrg" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:IN21_ST4> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse21> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "IN1IN21K1_A310__P015_NrgBezug" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:IN21_ST4_R> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse21> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "IN1IN21K1_A310__P015_NrgLieferung" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:IN21_ST5> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse21> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "IN1IN21K1_A300__P051_Nrg" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:IN21_ST6> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse21> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "IN1IN21K1_A300__P052_Nrg" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:IN26_SGES> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse26> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_260110" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:IN26_SPV145> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse26> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_260111" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:In1In11K1_E930_S94_P12_Nrg> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse11> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In11K1_E930_S94_P12_Nrg" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:In1In11K1_E930_S94_P13_Nrg> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse11> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In11K1_E930_S94_P13_Nrg" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:In1In11K1_E930_S94_P14_Nrg> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse11> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In11K1_E930_S94_P14_Nrg" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:In1In11K1_E930_S94_P16_Nrg> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse11> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In11K1_E930_S94_P16_Nrg" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:In1In11K1_E930_S94_PZ8_Nrg> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse11> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In11K1_E930_S94_PZ8_Nrg" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:In1In11K1_E930_S94_WZ9_Nrg> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse11> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In11K1_E930_S94_WZ9_Nrg" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:In1In11K1_H940_S94_P01_Nrg> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse11> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In11K1_H940_S94_P01_Nrg" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:In1In11K1_H941_S94_P02_Nrg> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse11> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In11K1_H941_S94_P02_Nrg" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:In1In11K1_H941_S94_V01_Nrg> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse11> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In11K1_H941_S94_V01_Nrg" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:In1In11K1_H942_S94_P01_Nrg> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse11> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In11K1_H942_S94_P01_Nrg" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:In1In11K1_H942_S94_P02_Nrg> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse11> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In11K1_H942_S94_P02_Nrg" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:In1In11K1_K940_S94_P01_Nrg> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse11> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In11K1_K940_S94_P01_Nrg" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:In1In11K1_K940_S94_P02_Nrg> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse11> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In11K1_K940_S94_P02_Nrg" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:In1In13K1_H6019_S04_Z26_Nrg> a brick:Energy_Usage_Sensor ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In13K1_H6019_S04_Z26_Nrg" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:In1In13K1_H6020_S04_Z20_Nrg> a brick:Energy_Usage_Sensor ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In13K1_H6020_S04_Z20_Nrg" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:In1In13K1_H6020_S04_Z21_Nrg> a brick:Energy_Usage_Sensor ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In13K1_H6020_S04_Z21_Nrg" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:In1In13K1_H6021_S04_Z22_Nrg> a brick:Energy_Usage_Sensor ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In13K1_H6021_S04_Z22_Nrg" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:In1In13K1_H6021_S04_Z23_Nrg> a brick:Energy_Usage_Sensor ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In13K1_H6021_S04_Z23_Nrg" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:In1In13K1_H6088_S04_Z11_Nrg> a brick:Energy_Usage_Sensor ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In13K1_H6088_S04_Z11_Nrg" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:In1In13K1_K6006_S04_Z25_Nrg> a brick:Energy_Usage_Sensor ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In13K1_K6006_S04_Z25_Nrg" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:In1In13K1_K6009_S04_Z12_Nrg> a brick:Energy_Usage_Sensor ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In13K1_K6009_S04_Z12_Nrg" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:In1In13K1_K6009_S04_Z13_Nrg> a brick:Energy_Usage_Sensor ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In13K1_K6009_S04_Z13_Nrg" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:In1In13K1_K6010_S04_Z14_Nrg> a brick:Energy_Usage_Sensor ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In13K1_K6010_S04_Z14_Nrg" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:In1In13K1_K6010_S04_Z15_Nrg> a brick:Energy_Usage_Sensor ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In13K1_K6010_S04_Z15_Nrg" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:In1In13K1_K6015_S04_Z10_Nrg> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse19> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In13K1_K6015_S04_Z10_Nrg" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:In1In33K1_H0101_S01_YE101> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse33> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In33K1_H0101_S01_YE101" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:In1In33K1_H0101__S01__YE101> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse33> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In33K1_H0101__S01__YE101" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:In1L33AK1_H0103_S01_P510_Nrg> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse33> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "In1L33AK1_H0103_S01_P510_Nrg" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:In1L33AK1_K0103_S01_P510_Nrg> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse33> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "In1L33AK1_K0103_S01_P510_Nrg" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:MC_ST1> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse25c> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_253110" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:MC_ST2> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse25c> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_253120" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:ME_ST1> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse25e> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_255102" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:ME_ST2> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse25e> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_255110" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:MF_ST1> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse25f> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_256110" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:MF_ST2> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse25f> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_256120" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Energy:MF_ST3> a brick:Energy_Usage_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse25f> ;
+    brick:hasUnit unit:KiloW-HR ;
+    brick:timeseries [ brick:hasTimeseriesId "20_256130" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Enthalpy:IN1IN13DG_WETT_S02_B02_Enth> a brick:Enthalpy_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse13> ;
+    brick:timeseries [ brick:hasTimeseriesId "IN1IN13DG_WETT_S02_B02_Enth" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:GlobalIrradianceDiffuse:IN1IN13DG_WETT_S02_B01_GlobIrradInDiffuse_Disc> a brick:Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse13> ;
+    brick:timeseries [ brick:hasTimeseriesId "IN1IN13DG_WETT_S02_B01_GlobIrradInDiffuse_Disc" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:GlobalIrradianceTotal:IN1IN13DG_WETT_S02_B01_GlobIrradTotal_Disc> a brick:Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse13> ;
+    brick:timeseries [ brick:hasTimeseriesId "IN1IN13DG_WETT_S02_B01_GlobIrradTotal_Disc" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Humidity:IN_IN160_LORA__TEIS001__B01_2_Hum> a brick:Humidity_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIS001__B01_2_Hum" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Humidity:IN_IN160_LORA__TEIS002__B01_2_Hum> a brick:Humidity_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIS002__B01_2_Hum" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Humidity:IN_IN160_LORA__TEIS003__B01_2_Hum> a brick:Humidity_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIS003__B01_2_Hum" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Humidity:IN_IN160_LORA__TEIS004__B01_2_Hum> a brick:Humidity_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIS004__B01_2_Hum" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Humidity:IN_IN160_LORA__TEIS005__B01_2_Hum> a brick:Humidity_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIS005__B01_2_Hum" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Humidity:IN_IN160_LORA__TEIS006__B01_2_Hum> a brick:Humidity_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIS006__B01_2_Hum" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Humidity:IN_IN160_LORA__TEIS007__B01_2_Hum> a brick:Humidity_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIS007__B01_2_Hum" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Humidity:IN_IN160_LORA__TEIS008__B01_2_Hum> a brick:Humidity_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIS008__B01_2_Hum" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Humidity:IN_IN160_LORA__TEIS009__B01_2_Hum> a brick:Humidity_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIS009__B01_2_Hum" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Humidity:In1In13O6_R016_S02_B01_2_Hum> a brick:Humidity_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse13> ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In13O6_R016_S02_B01_2_Hum" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:HumidityAbsolute:IN1IN13DG_WETT_S02_B02_AbsHum> a brick:Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse13> ;
+    brick:timeseries [ brick:hasTimeseriesId "IN1IN13DG_WETT_S02_B02_AbsHum" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:HumidityRelative:IN1IN13DG_WETT_S02_B02_RelHum> a brick:Relative_Humidity_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse13> ;
+    brick:timeseries [ brick:hasTimeseriesId "IN1IN13DG_WETT_S02_B02_RelHum" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:OpenClose:IN_IN160_LORA__TETBDW001__N01_2_Stat> a brick:Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TETBDW001__N01_2_Stat" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:OpenClose:IN_IN160_LORA__TETBDW002__N01_2_Stat> a brick:Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TETBDW002__N01_2_Stat" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:OpenClose:IN_IN160_LORA__TETBDW003__N01_2_Stat> a brick:Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TETBDW003__N01_2_Stat" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:OpenClose:IN_IN160_LORA__TETBDW004__N01_2_Stat> a brick:Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TETBDW004__N01_2_Stat" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:OpenClose:IN_IN160_LORA__TETBDW005__N01_2_Stat> a brick:Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TETBDW005__N01_2_Stat" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:OpenClose:IN_IN160_LORA__TETBDW006__N01_2_Stat> a brick:Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TETBDW006__N01_2_Stat" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:OpenClose:IN_IN160_LORA__TETBDW007__N01_2_Stat> a brick:Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TETBDW007__N01_2_Stat" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:OpenClose:IN_IN160_LORA__TETBDW008__N01_2_Stat> a brick:Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TETBDW008__N01_2_Stat" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:OpenClose:IN_IN160_LORA__TETBDW009__N01_2_Stat> a brick:Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TETBDW009__N01_2_Stat" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:People:Inff33> a brick:Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse33> ;
+    brick:timeseries [ brick:hasTimeseriesId "Inff33" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Power:In1In13K1_K6009_S04_Z13_Pow> a brick:Power_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In13K1_K6009_S04_Z13_Pow" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Power:In1In13K1_K6010_S04_Z14_Pow> a brick:Power_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In13K1_K6010_S04_Z14_Pow" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Power:In1In13K1_K6010_S04_Z15_Pow> a brick:Power_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In13K1_K6010_S04_Z15_Pow" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Power:In1In13K1_K6015_S04_Z10_Pow> a brick:Power_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse19> ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In13K1_K6015_S04_Z10_Pow" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Site:AlteTechnik> a brick:Building .
+
+<urn:ngsi-ld:Site:Inffeldgasse> a brick:Building .
+
+<urn:ngsi-ld:Site:NeueTechnik> a brick:Building .
+
+<urn:ngsi-ld:SunshineDetect:IN1IN13DG_WETT_S02_B01_SunshineDetect_Disc> a brick:Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse13> ;
+    brick:timeseries [ brick:hasTimeseriesId "IN1IN13DG_WETT_S02_B01_SunshineDetect_Disc" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Temperature:IN1IN13DG_WETT_S02_B02_Temp> a brick:Temperature_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse13> ;
+    brick:hasUnit unit:DEG_C ;
+    brick:timeseries [ brick:hasTimeseriesId "IN1IN13DG_WETT_S02_B02_Temp" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Temperature:IN_IN160_LORA__TEIS001__B01_1_Temp> a brick:Temperature_Sensor ;
+    brick:hasUnit unit:DEG_C ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIS001__B01_1_Temp" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Temperature:IN_IN160_LORA__TEIS002__B01_1_Temp> a brick:Temperature_Sensor ;
+    brick:hasUnit unit:DEG_C ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIS002__B01_1_Temp" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Temperature:IN_IN160_LORA__TEIS003__B01_1_Temp> a brick:Temperature_Sensor ;
+    brick:hasUnit unit:DEG_C ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIS003__B01_1_Temp" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Temperature:IN_IN160_LORA__TEIS004__B01_1_Temp> a brick:Temperature_Sensor ;
+    brick:hasUnit unit:DEG_C ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIS004__B01_1_Temp" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Temperature:IN_IN160_LORA__TEIS005__B01_1_Temp> a brick:Temperature_Sensor ;
+    brick:hasUnit unit:DEG_C ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIS005__B01_1_Temp" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Temperature:IN_IN160_LORA__TEIS006__B01_1_Temp> a brick:Temperature_Sensor ;
+    brick:hasUnit unit:DEG_C ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIS006__B01_1_Temp" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Temperature:IN_IN160_LORA__TEIS007__B01_1_Temp> a brick:Temperature_Sensor ;
+    brick:hasUnit unit:DEG_C ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIS007__B01_1_Temp" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Temperature:IN_IN160_LORA__TEIS008__B01_1_Temp> a brick:Temperature_Sensor ;
+    brick:hasUnit unit:DEG_C ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIS008__B01_1_Temp" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Temperature:IN_IN160_LORA__TEIS009__B01_1_Temp> a brick:Temperature_Sensor ;
+    brick:hasUnit unit:DEG_C ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TEIS009__B01_1_Temp" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Temperature:IN_IN160_LORA__TETBDW001__N01_1_Temp> a brick:Temperature_Sensor ;
+    brick:hasUnit unit:DEG_C ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TETBDW001__N01_1_Temp" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Temperature:IN_IN160_LORA__TETBDW002__N01_1_Temp> a brick:Temperature_Sensor ;
+    brick:hasUnit unit:DEG_C ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TETBDW002__N01_1_Temp" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Temperature:IN_IN160_LORA__TETBDW003__N01_1_Temp> a brick:Temperature_Sensor ;
+    brick:hasUnit unit:DEG_C ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TETBDW003__N01_1_Temp" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Temperature:IN_IN160_LORA__TETBDW004__N01_1_Temp> a brick:Temperature_Sensor ;
+    brick:hasUnit unit:DEG_C ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TETBDW004__N01_1_Temp" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Temperature:IN_IN160_LORA__TETBDW005__N01_1_Temp> a brick:Temperature_Sensor ;
+    brick:hasUnit unit:DEG_C ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TETBDW005__N01_1_Temp" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Temperature:IN_IN160_LORA__TETBDW006__N01_1_Temp> a brick:Temperature_Sensor ;
+    brick:hasUnit unit:DEG_C ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TETBDW006__N01_1_Temp" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Temperature:IN_IN160_LORA__TETBDW007__N01_1_Temp> a brick:Temperature_Sensor ;
+    brick:hasUnit unit:DEG_C ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TETBDW007__N01_1_Temp" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Temperature:IN_IN160_LORA__TETBDW008__N01_1_Temp> a brick:Temperature_Sensor ;
+    brick:hasUnit unit:DEG_C ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TETBDW008__N01_1_Temp" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Temperature:IN_IN160_LORA__TETBDW009__N01_1_Temp> a brick:Temperature_Sensor ;
+    brick:hasUnit unit:DEG_C ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TETBDW009__N01_1_Temp" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Temperature:In1In13O6_R016_S02_B01_1_Temp> a brick:Temperature_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse13> ;
+    brick:hasUnit unit:DEG_C ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In13O6_R016_S02_B01_1_Temp" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:UnknownSensor:IN_IN160_LORA__TETBDW010__N01_1_Temp1> a brick:Battery_Voltage_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TETBDW010__N01_1_Temp1" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:UnknownSensor:IN_IN160_LORA__TETBDW010__N01_2_Stat1> a brick:Battery_Voltage_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TETBDW010__N01_2_Stat1" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:UnknownSensor:IN_IN160_LORA__TETBDW010__N01_3_Bat1> a brick:Battery_Voltage_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TETBDW010__N01_3_Bat1" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:UnknownSensor:IN_IN160_LORA__TETBDW010__N01_4_BatV1> a brick:Battery_Voltage_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "IN_IN160_LORA__TETBDW010__N01_4_BatV1" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:UnknownSensor:In1In13K1_H6016_S04_Z24_NrgKRF> a brick:Battery_Voltage_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In13K1_H6016_S04_Z24_NrgKRF" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:UnknownSensor:In1In13K1_H6016_S04_Z24_NrgWRF> a brick:Battery_Voltage_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In13K1_H6016_S04_Z24_NrgWRF" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:UnknownSensor:In1In13K1_H6016_S04_Z24_Pow> a brick:Battery_Voltage_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In13K1_H6016_S04_Z24_Pow" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:UnknownSensor:In1In13K1_H6019_S04_Z26_Pow> a brick:Battery_Voltage_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In13K1_H6019_S04_Z26_Pow" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:UnknownSensor:In1In13K1_H6020_S04_Z20_Pow> a brick:Battery_Voltage_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In13K1_H6020_S04_Z20_Pow" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:UnknownSensor:In1In13K1_H6020_S04_Z21_Pow> a brick:Battery_Voltage_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In13K1_H6020_S04_Z21_Pow" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:UnknownSensor:In1In13K1_H6021_S04_Z22_Pow> a brick:Battery_Voltage_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In13K1_H6021_S04_Z22_Pow" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:UnknownSensor:In1In13K1_H6021_S04_Z23_Pow> a brick:Battery_Voltage_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In13K1_H6021_S04_Z23_Pow" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:UnknownSensor:In1In13K1_H6088_S04_Z11_Pow> a brick:Battery_Voltage_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In13K1_H6088_S04_Z11_Pow" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:UnknownSensor:In1In13K1_K6006_S04_Z25_Pow> a brick:Battery_Voltage_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In13K1_K6006_S04_Z25_Pow" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:UnknownSensor:In1In13K1_K6009_S04_Z12_Pow> a brick:Battery_Voltage_Sensor ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In13K1_K6009_S04_Z12_Pow" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Water:In1In11K1_S001_S94_P01_Vol> a brick:Water_Flow_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse11> ;
+    brick:timeseries [ brick:hasTimeseriesId "In1In11K1_S001_S94_P01_Vol" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Water:In1L33AK1_S0102_P101_Vol> a brick:Water_Flow_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse33> ;
+    brick:timeseries [ brick:hasTimeseriesId "In1L33AK1_S0102_P101_Vol" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Water:In1L33AK1_S0102_P201_Vol> a brick:Water_Flow_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse33> ;
+    brick:timeseries [ brick:hasTimeseriesId "In1L33AK1_S0102_P201_Vol" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Water:In2In18K1_S001_S40_P01> a brick:Water_Flow_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse18> ;
+    brick:timeseries [ brick:hasTimeseriesId "In2In18K1_S001_S40_P01" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Water:In2In18K1_S001_S40_P02> a brick:Water_Flow_Sensor ;
+    brick:hasLocation <urn:ngsi-ld:Building:Inffeldgasse18> ;
+    brick:timeseries [ brick:hasTimeseriesId "In2In18K1_S001_S40_P02" ;
+            brick:storedAt <urn:influxdb> ] .
+
+<urn:ngsi-ld:Building:Inffeldgasse17> a brick:Building ;
+    brick:hasAddress "Inffeldgasse 17, Graz 8010" .
+
+<urn:ngsi-ld:Building:Inffeldgasse10> a brick:Building ;
+    brick:hasAddress "Inffeldgasse 10, Graz 8010" .
+
+<urn:ngsi-ld:Building:Inffeldgasse15> a brick:Building ;
+    brick:hasAddress "Inffeldgasse 15, Graz 8010" .
+
+<urn:ngsi-ld:Building:Inffeldgasse19> a brick:Building ;
+    brick:hasAddress "Inffeldgasse 19, Graz 8010" .
+
+<urn:ngsi-ld:Building:Inffeldgasse23> a brick:Building ;
+    brick:hasAddress "Inffeldgasse 23, Graz 8010" .
+
+<urn:ngsi-ld:Building:Inffeldgasse24> a brick:Building ;
+    brick:hasAddress "Inffeldgasse 24, Graz 8010" .
+
+<urn:ngsi-ld:Building:Inffeldgasse25c> a brick:Building ;
+    brick:hasAddress "Inffeldgasse 25c, Graz 8010" .
+
+<urn:ngsi-ld:Building:Inffeldgasse26> a brick:Building ;
+    brick:hasAddress "Inffeldgasse 26, Graz 8010" .
+
+<urn:ngsi-ld:Building:Kopernikusgasse24> a brick:Building ;
+    brick:hasAddress "Kopernikusgasse 24, Graz 8010" .
+
+<urn:ngsi-ld:Building:Petersgasse12> a brick:Building ;
+    brick:hasAddress "Petersgasse 12, Graz 8010" .
+
+<urn:ngsi-ld:Building:Inffeldgasse25b> a brick:Building ;
+    brick:hasAddress "Inffeldgasse 25b, Graz 8010" .
+
+<urn:ngsi-ld:Building:Petersgasse14> a brick:Building ;
+    brick:hasAddress "Petersgasse 14, Graz 8010" .
+
+<urn:ngsi-ld:Building:Petersgasse16> a brick:Building ;
+    brick:hasAddress "Petersgasse 16, Graz 8010" .
+
+<urn:ngsi-ld:Building:Rechbauerstrasse12> a brick:Building ;
+    brick:hasAddress "Rechbauerstraße 12, Graz 8010" .
+
+<urn:ngsi-ld:Building:Inffeldgasse18> a brick:Building ;
+    brick:hasAddress "Inffeldgasse 18, Graz 8010" .
+
+<urn:ngsi-ld:Building:Inffeldgasse25f> a brick:Building ;
+    brick:hasAddress "Inffeldgasse 25f, Graz 8010" .
+
+<urn:ngsi-ld:Building:Inffeldgasse12> a brick:Building ;
+    brick:hasAddress "Inffeldgasse 12, Graz 8010" .
+
+<urn:ngsi-ld:Building:Inffeldgasse25e> a brick:Building ;
+    brick:hasAddress "Inffeldgasse 25e, Graz 8010" .
+
+<urn:ngsi-ld:Building:Stremayrgasse16> a brick:Building ;
+    brick:hasAddress "Stremayrgasse 16, Graz 8010" .
+
+<urn:ngsi-ld:Building:Stremayrgasse9> a brick:Building ;
+    brick:hasAddress "Stremayrgasse 9, Graz 8010" .
+
+<urn:ngsi-ld:Building:Inffeldgasse16> a brick:Building ;
+    brick:hasAddress "Inffeldgasse 16, Graz 8010" .
+
+<urn:ngsi-ld:Building:Inffeldgasse21> a brick:Building ;
+    brick:hasAddress "Inffeldgasse 21, Graz 8010" .
+
+<urn:ngsi-ld:Building:Inffeldgasse33> a brick:Building ;
+    brick:hasAddress "Inffeldgasse 33, Graz 8010" .
+
+<urn:ngsi-ld:Building:Inffeldgasse13> a brick:Building ;
+    brick:hasAddress "Inffeldgasse 13, Graz 8010" .
+
+<urn:ngsi-ld:Building:Inffeldgasse25a> a brick:Building ;
+    brick:hasAddress "Inffeldgasse 25a, Graz 8010" .
+
+<urn:ngsi-ld:Building:Inffeldgasse11> a brick:Building ;
+    brick:hasAddress "Inffeldgasse 11, Graz 8010" .
+
+<urn:influxdb> a brick:Database .
+

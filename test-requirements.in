@@ -1,0 +1,7 @@
+mock
+pytest
+requests-mock
+mongomock
+webtest
+pylint
+coverage

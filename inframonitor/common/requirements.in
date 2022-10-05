@@ -1,0 +1,6 @@
+influxdb
+pymongo
+dataclasses
+termcolor
+apscheduler
+paho-mqtt

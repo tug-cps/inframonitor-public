@@ -1,0 +1,23 @@
+connexion
+swagger-ui-bundle
+flask
+flask-cors
+flask-limiter
+flask-jwt-extended
+influxdb
+jsonschema
+pyjwt
+pymongo
+python-dateutil
+werkzeug
+rdflib
+
+
+# release requirements
+gunicorn
+
+# test requirements
+pytest
+mongomock
+webtest
+
