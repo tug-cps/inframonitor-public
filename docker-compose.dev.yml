@@ -1,0 +1,33 @@
+version: '3.5'
+# Development overrides
+# Usage: docker-compose-dev.sh [command]
+services:
+  # Optional user interface for creating flux queries efficiently
+  chronograf:
+    image: chronograf
+    container_name: chronograf
+    hostname: chronograf
+    ports: [ "8888:8888" ]
+    volumes: [ chronograf:/var/lib/chronograf ]
+    depends_on: [ influxdb ]
+    networks: [ inframonitor-influx ]
+    profiles: [ optional ]
+
+  mqtt: { volumes: [ ./mosquitto/mosquitto.conf.dev:/mosquitto/config/mosquitto.conf:ro ] }
+  nginx: { volumes: [ ./nginx/nginx.conf.dev:/etc/nginx/nginx.conf:ro ] }
+  influxdb: { healthcheck: { test: [ "CMD", "curl", "--fail", "http://influxdb:8086/health" ] } }
+
+  alert: { env_file: [ .env.dev ] }
+  monitor: { env_file: [ .env.dev ] }
+  mqttagent: { env_file: [ .env.dev ], volumes: [ ./inframonitor:/app:ro ] }
+  httpagent: { env_file: [ .env.dev ] }
+  mongoagent: { env_file: [ .env.dev ] }
+  prediction: { env_file: [ .env.dev ] }
+  reset: { env_file: [ .env.dev ] }
+  admin: { env_file: [ .env.dev ] }
+  api: { env_file: [ .env.dev ] }
+
+  mongodb: { command: --noauth }
+
+volumes:
+  chronograf: { name: chronograf }

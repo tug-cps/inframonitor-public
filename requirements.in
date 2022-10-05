@@ -1,0 +1,48 @@
+### inframonitor/admin/
+flask
+flask-admin
+pymongo
+gunicorn
+flask-jwt-extended
+
+### inframonitor/common/
+influxdb
+pymongo
+dataclasses
+termcolor
+apscheduler
+paho-mqtt
+
+### inframonitor/prediction/
+tensorflow
+numpy
+holidays
+scikit-learn
+pvlib
+pandas
+
+### inframonitor/restapi/
+connexion
+swagger-ui-bundle
+flask
+flask-cors
+flask-limiter
+flask-jwt-extended
+influxdb
+jsonschema
+pyjwt
+pymongo
+python-dateutil
+werkzeug
+rdflib
+
+
+# release requirements
+gunicorn
+
+# test requirements
+pytest
+mongomock
+webtest
+
+

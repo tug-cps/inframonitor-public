@@ -1,0 +1,1 @@
+from .bricksensor import BricksensorView

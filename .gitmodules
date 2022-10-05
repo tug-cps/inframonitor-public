@@ -1,0 +1,3 @@
+[submodule "service/src/prediction/datamodels"]
+	path = inframonitor/prediction/datamodels
+	url = https://github.com/tug-cps/datamodels

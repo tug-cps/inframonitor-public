@@ -1,0 +1,41 @@
+{% extends 'admin/master.html' %}
+{% block head %}
+{{ super() }}
+<script src="https://cdn.anychart.com/releases/8.8.0/js/anychart-core.min.js"></script>
+<script src="https://cdn.anychart.com/releases/8.8.0/js/anychart-graph.min.js"></script>
+<script src="https://cdn.anychart.com/releases/8.8.0/js/anychart-data-adapter.min.js"></script>
+
+<style type="text/css">
+    html, body, #container {
+        width: 100%;
+        height: 700px;
+    }
+</style>
+{% endblock head %}
+
+{% block body %}
+{{ super() }}
+<div class="container">
+    <h1>Inframonitor Admin</h1>
+</div>
+<div>
+    <p>
+    <ul>
+        <li>{{sites}} Sites</li>
+        <li>{{buildings}} Buildings</li>
+        <li>{{sensors}} Sensors</li>
+    </ul>
+</div>
+
+<div id="container"></div>
+<script>
+    anychart.data.loadJsonFile("/chart/data", function (data) {
+        chart = anychart.graph(data);
+        chart.title("{{title}}")
+        chart.container("container");
+        chart.draw();
+    });
+
+</script>
+{% endblock body %}
+

@@ -1,0 +1,28 @@
+use admin
+db.createUser(
+  {
+    user: "admin",
+    pwd: "<password>",
+    roles: [ { role: "userAdminAnyDatabase", db: "admin" }, "readWriteAnyDatabase" ]
+  }
+)
+
+use ontology
+db.createUser(
+  {
+    user: "sensor",
+    pwd: "<password>",
+    roles: [ { role: "readWrite", db: "ontology" } ]
+    }
+)
+db.createUser(
+  {
+    user: "grafana",
+    pwd: "grafana",
+    roles: [ { role: "read", db: "ontology" } ]
+  }
+)
+
+# change password:
+use ontology
+db.changeUserPassword('username', 'password')

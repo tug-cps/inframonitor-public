@@ -1,0 +1,702 @@
+openapi: 3.0.0
+
+info:
+  title: Inframonitor API
+  version: 0.1.0
+  contact:
+    email: thomas.schwengler@tugraz.at
+
+servers:
+  - url: /v2/
+
+tags:
+  - name: dataItem
+    description: Individual data items that store data
+  - name: operationPlan
+    description: Operation plans provided by the EMS
+  - name: weather
+    description: Weather data
+  - name: building
+    description: Building information and assigned dataItems
+  - name: brick
+    description: Brick ontology schema
+  - name: site
+    description: Site information and assigned buildings
+
+paths:
+  /site:
+    get:
+      tags: [ site ]
+      summary: Get all sites
+      responses:
+        200:
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/site"
+  /site/{siteId}:
+    parameters:
+      - name: siteId
+        in: path
+        description: ID of site to return the details for
+        required: true
+        schema:
+          type: string
+        example: Inffeldgasse
+    get:
+      tags: [ site ]
+      summary: Get details for a site
+      responses:
+        200:
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/site"
+  /building:
+    get:
+      tags: [ building ]
+      summary: Get all buildings
+      parameters:
+        - name: siteId
+          in: query
+          description: Site ID to filter the buildings by
+          schema:
+            type: string
+      responses:
+        200:
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/building"
+  /building/{buildingId}:
+    parameters:
+      - name: buildingId
+        in: path
+        description: ID of building to return the details for
+        required: true
+        schema:
+          type: string
+        example: Inf13
+    get:
+      tags: [ building ]
+      summary: Get details for building
+      responses:
+        200:
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/building"
+  /bricksensor:
+    get:
+      tags: [ brick ]
+      summary: Get metadata of all sensors
+      responses:
+        200:
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+  /bricksensor/{name}:
+    parameters:
+      - name: name
+        in: path
+        description: name of the sensor to return the details for
+        required: true
+        schema:
+          type: string
+        example: IN20_090102
+    get:
+      tags: [ brick ]
+      summary: Get details for sensor
+      responses:
+        200:
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                type: object
+  /dataItem:
+    get:
+      tags: [ dataItem ]
+      summary: Get all available data item definitions
+      description: Filter with parameters
+      parameters:
+        - name: siteId
+          in: query
+          description: Site ID to filter the data items by
+          schema:
+            type: string
+        - name: buildingId
+          in: query
+          description: Building ID to filter the data items by
+          schema:
+            type: string
+      responses:
+        200:
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/dataItem'
+  /dataItem/{dataItemId}:
+    parameters:
+      - name: dataItemId
+        in: path
+        description: ID of data item to return
+        required: true
+        schema:
+          type: string
+    get:
+      tags: [ dataItem ]
+      summary: Get details for one specific data item
+      responses:
+        200:
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/dataItem'
+  /dataItem/{dataItemId}/data/history/:
+    get:
+      tags: [ dataItem ]
+      summary: Get historic data for a single data item
+      parameters:
+        - name: dataItemId
+          in: path
+          required: true
+          description: Data item ID to query.
+          schema:
+            type: string
+        - $ref: '#/components/parameters/tFrom'
+        - $ref: '#/components/parameters/tTo'
+        - $ref: '#/components/parameters/limit'
+        - $ref: '#/components/parameters/sampleTime'
+        - $ref: '#/components/parameters/aggregation'
+        - $ref: '#/components/parameters/fill'
+        - $ref: '#/components/parameters/offset'
+        - $ref: '#/components/parameters/order'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/pagedData'
+                  - $ref: '#/components/schemas/historicData'
+  /dataItem/{dataItemId}/data/prediction/:
+    post:
+      tags: [ dataItem ]
+      summary: create new predictions for a single data item
+      parameters:
+        - name: dataItemId
+          in: path
+          required: true
+          description: Data item ID to query.
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/predictionData"
+      responses:
+        '201':
+          description: Created
+    get:
+      tags: [ dataItem ]
+      summary: Get predictions for a single data item
+      parameters:
+        - name: dataItemId
+          in: path
+          required: true
+          description: Data item ID to query.
+          schema:
+            type: string
+        - $ref: '#/components/parameters/tFrom'
+        - $ref: '#/components/parameters/tTo'
+        - $ref: '#/components/parameters/limit'
+        - $ref: '#/components/parameters/offset'
+        - $ref: '#/components/parameters/order'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/pagedData'
+                  - $ref: '#/components/schemas/predictionData'
+  /dataItem/{dataItemId}/data/accounting/:
+    get:
+      tags: [ dataItem ]
+      summary: Get balance calculations for a single data item
+      parameters:
+        - name: dataItemId
+          in: path
+          required: true
+          description: Data item ID to query.
+          schema:
+            type: string
+        - $ref: '#/components/parameters/tFrom'
+        - $ref: '#/components/parameters/tTo'
+        - $ref: '#/components/parameters/limit'
+        - $ref: '#/components/parameters/offset'
+        - $ref: '#/components/parameters/order'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/pagedData'
+                  - $ref: '#/components/schemas/accountingData'
+    post:
+      tags: [ dataItem ]
+      summary: create new balance calculations for a single data item
+      parameters:
+        - name: dataItemId
+          in: path
+          required: true
+          description: Data item ID to query.
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/accountingData"
+      responses:
+        '201':
+          description: Created
+  /batch/data/history:
+    get:
+      tags: [ dataItem ]
+      summary: Get historic data for multiple data items
+      parameters:
+        - in: query
+          name: dataItemIds
+          description: A comma separated list of data item IDs to batch query.
+          required: true
+          schema:
+            type: string
+          example: id1, id2, id3
+        - $ref: '#/components/parameters/tFrom'
+        - $ref: '#/components/parameters/tTo'
+        - $ref: '#/components/parameters/limit'
+        - $ref: '#/components/parameters/sampleTime'
+        - $ref: '#/components/parameters/aggregation'
+        - $ref: '#/components/parameters/fill'
+        - $ref: '#/components/parameters/order'
+        - $ref: '#/components/parameters/offset'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/pagedData'
+                  - $ref: "#/components/schemas/batchHistoricData"
+  /batch/data/prediction:
+    post:
+      tags: [ dataItem ]
+      summary: Create new prediction for multiple data items
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/batchPredictionData"
+      responses:
+        '201':
+          description: Created
+    get:
+      tags: [ dataItem ]
+      summary: Get historic data for multiple data items
+      parameters:
+        - in: query
+          name: dataItemIds
+          description: A comma separated list of data item IDs to batch query.
+          required: true
+          schema:
+            type: string
+          example: id1, id2, id3
+        - $ref: '#/components/parameters/tFrom'
+        - $ref: '#/components/parameters/tTo'
+        - $ref: '#/components/parameters/limit'
+        - $ref: '#/components/parameters/order'
+        - $ref: '#/components/parameters/offset'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/pagedData'
+                  - $ref: "#/components/schemas/batchPredictionData"
+  /operationPlan:
+    post:
+      tags: [ operationPlan ]
+      summary: Create new operation plan
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/schedule"
+      responses:
+        '201':
+          description: Created
+    get:
+      tags: [ operationPlan ]
+      summary: Get an operation plan
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/schedule"
+  /weather/forecast:
+    parameters:
+      - $ref: '#/components/parameters/tFrom'
+      - $ref: '#/components/parameters/tTo'
+    get:
+      tags: [ weather ]
+      summary: Get available weather forecasts
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/weatherForecast'
+  /weather/forecast/{created}:
+    parameters:
+      - name: created
+        in: path
+        description: Creation timestamp of the forecast
+        required: true
+        schema:
+          type: number
+          description: Unix timestamp or -1 for latest entry
+          example: -1
+      - $ref: '#/components/parameters/tFrom'
+      - $ref: '#/components/parameters/tTo'
+    get:
+      tags: [ weather ]
+      summary: Get weather forecast data
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/weatherForecastData"
+components:
+  parameters:
+    tFrom:
+      in: query
+      name: from
+      description: The start UNIX timestamp in seconds, UTC timezone
+      required: false
+      schema: { type: integer }
+    tTo:
+      in: query
+      name: to
+      description: The end UNIX timestamp in seconds, UTC timezone
+      required: false
+      schema: { type: integer }
+    limit:
+      in: query
+      name: limit
+      description: Limit of returned values
+      required: false
+      schema: { type: integer }
+    order:
+      in: query
+      name: order
+      description: Order by time. Ascending will return data with the oldest timestamp first.
+      required: false
+      schema:
+        type: string
+        enum: [ ASC, DESC ]
+        default: ASC
+    offset:
+      in: query
+      name: offset
+      description: Paginate <offset> points in the query results
+      required: false
+      schema: { type: integer }
+    sampleTime:
+      in: query
+      name: sampleTime
+      description: Sample time for the query (in seconds). If this parameter is used, values will be sampled in the sample time range (see <a href="https://docs.influxdata.com/influxdb/v1.8/query_language/explore-data/#group-by-time-intervals-and-fill">documentation</a>)
+      required: false
+      schema:
+        type: integer
+    aggregation:
+      in: query
+      name: aggregation
+      description: Aggregation function for sampled values (see <a href="https://docs.influxdata.com/influxdb/v1.8/query_language/functions/">documentation</a>)
+      required: false
+      schema:
+        type: string
+        enum: [ first, last, min, max, mean, median ]
+        default: first
+    fill:
+      in: query
+      name: fill
+      description: Change the value reported for time intervals that have no data (see <a href="https://docs.influxdata.com/influxdb/v1.8/query_language/explore-data/#group-by-time-intervals-and-fill">documentation</a>)
+      required: false
+      schema:
+        type: string
+        enum: [ linear, none, 'null', previous ]
+        default: 'null'
+  schemas:
+    pagedData:
+      type: object
+      properties:
+        metadata:
+          type: object
+          properties:
+            limit: { type: integer, example: 10 }
+            offset: { type: integer, example: 20 }
+            order: { type: string, enum: [ ASC, DESC ] }
+            count: { type: integer, example: 5 }
+    geoLocation:
+      type: object
+      nullable: true
+      properties:
+        lat:
+          type: number
+          example: 47.07325875
+          description: Latitude in degrees
+        long:
+          type: number
+          example: 15.4444721
+          description: Longitude in degrees
+        alt:
+          type: number
+          example: 371.0
+          description: Altitude in meters
+    site:
+      type: object
+      description: The location
+      properties:
+        id:
+          type: string
+          example: Inffeldgasse
+        buildingIds:
+          type: array
+          items:
+            type: string
+          example: [ Inf25b, Inf25b, Inf33 ]
+          description: Buildings at this site
+    building:
+      type: object
+      description: An individual building
+      properties:
+        id:
+          type: string
+          example: Inf13
+        dataItemIds:
+          type: array
+          items: { type: string }
+          example: [ id1, id2, id3 ]
+          description: Data item IDs associated to this building
+        geoLocation:
+          $ref: "#/components/schemas/geoLocation"
+    dataItem:
+      type: object
+      description: An individual data item
+      properties:
+        id:
+          type: string
+          example: someid1234
+          description: Unique ID of the data item
+        unit:
+          type: string
+          enum: [ MWh, kWh, kW, °C, bar, \%, on/off, Unknown ]
+          example: MWh
+          description: Physical unit of the data item
+        description:
+          type: string
+          example: El. energy counter for heat pump 1
+        updateInterval:
+          type: integer
+          example: 900
+          minimum: 1
+          description: Update interval in seconds
+        source:
+          type: string
+          enum: [ EAM, EAM_JSON, Wildpacher, IST, Unknown ]
+          description: Source of the data
+          example: EAM
+        timeCreated:
+          type: integer
+          example: 1644309798
+          description: UNIX timestamp of creation
+        energoId:
+          type: string
+          example: IN12_WP1
+          description: Energo+ ID
+          nullable: true
+    timeValuePair:
+      type: object
+      description: timestamp value pair for one data item
+      properties:
+        timestamp:
+          type: integer
+          example: 1644309798
+        value:
+          nullable: true
+          type: number
+          example: 268387.12
+    timeValuesPair:
+      type: object
+      description: timestamp values pair for multiple data items
+      properties:
+        timestamp:
+          type: integer
+          example: 1644309798
+        values:
+          type: array
+          items:
+            type: number
+            nullable: true
+          example: [ 7.12, 800.4, 600.3 ]
+    weatherForecast:
+      type: object
+      description: Weather forecast
+      properties:
+        created:
+          type: number
+          example: 12354535
+    weatherForecastData:
+      type: object
+      properties:
+        ids:
+          type: array
+          items:
+            type: string
+          example: [ temperature, GHI, DHI ]
+        values:
+          type: array
+          items:
+            $ref: "#/components/schemas/timeValuesPair"
+        created:
+          type: number
+          example: 1644336094
+          description: UNIX timestamp of the creation of the weather forecast
+    historicData:
+      type: object
+      properties:
+        dataItemId:
+          type: string
+          example: someid1123
+        dataItemValues:
+          type: array
+          items:
+            $ref: '#/components/schemas/timeValuePair'
+    accountingData:
+      type: object
+      properties:
+        dataItemValues:
+          type: array
+          items:
+            $ref: '#/components/schemas/timeValuePair'
+        created:
+          type: number
+          example: 13432432
+          description: UNIX timestamp of the creation of the prediction
+    predictionData:
+      type: object
+      properties:
+        dataItemValues:
+          type: array
+          items:
+            $ref: '#/components/schemas/timeValuePair'
+        created:
+          type: number
+          example: 13432432
+          description: UNIX timestamp of the creation of the prediction
+    batchHistoricData:
+      type: object
+      properties:
+        ids:
+          type: array
+          items:
+            type: string
+          example: [ id1, id2, id3 ]
+        values:
+          type: array
+          items:
+            $ref: '#/components/schemas/timeValuesPair'
+    batchPredictionData:
+      allOf:
+        - $ref: '#/components/schemas/batchHistoricData'
+        - type: object
+          properties:
+            created:
+              type: number
+              example: 1644336094
+              description: UNIX timestamp of the creation of the prediction
+    schedule:
+      type: object
+      example:
+        info: { status: OPTIMAL, timestamp: 2019-12-01T00:15:00 }
+        schedules:
+          - id: global_unique_id1
+            description: description1
+            values: [ 0, 1, 2 ]
+            unit: "%"
+            timestamps: [ 2019-12-01T00:15:00, 2019-12-01T00:30:00, 2019-12-01T00:45:00 ]
+          - id: global_unique_id2
+            description: description2
+            values: [ 0, 1, 2 ]
+            unit: "%"
+            timestamps: [ 2019-12-01T00:15:00, 2019-12-01T00:30:00, 2019-12-01T00:45:00 ]
+          - id: global_unique_id3
+            description: description3
+            values: [ 0, 1, 2 ]
+            unit: "%"
+            timestamps: [ 2019-12-01T00:15:00, 2019-12-01T00:30:00, 2019-12-01T00:45:00 ]
+      properties:
+        schedules:
+          type: array
+          items:
+            type: object
+            properties:
+              values: { type: array, items: { type: number } }
+              id: { type: string }
+              description: { type: string }
+              unit: { type: string }
+              timestamps: { type: array, items: { type: string } }
+        info:
+          type: object
+          properties:
+            status: { type: string }
+            timestamp: { type: string }
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      x-bearerInfoFunc: restapi.app.decode_token
+security:
+  - bearerAuth: [ ]

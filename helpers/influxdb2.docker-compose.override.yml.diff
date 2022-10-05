@@ -1,0 +1,15 @@
+diff --git a/docker-compose.override.yml b/docker-compose.override.yml
+index c834c22..1c6b023 100644
+--- a/docker-compose.override.yml
++++ b/docker-compose.override.yml
+@@ -7,10 +7,6 @@ services:
+       - ./mosquitto/mosquitto.conf:/mosquitto/config/mosquitto.conf:ro
+       - /srv/certs:/certs:ro
+ 
+-  influxdb:
+-    volumes:
+-      - ./influxdb/influxdb.conf:/etc/influxdb/influxdb.conf:ro
+-
+   mongodb:
+     command: --bind_ip_all --auth
+ 
