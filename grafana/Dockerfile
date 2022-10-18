@@ -2,7 +2,7 @@ FROM alpine AS builder
 WORKDIR /tmp/build
 RUN wget -q -O master.zip https://github.com/JamesOsgood/mongodb-grafana/archive/master.zip && unzip master.zip && rm master.zip
 
-FROM grafana/grafana-oss:9.1.6
+FROM grafana/grafana-oss:9.2.1
 ENV GF_PLUGIN_DIR=/usr/local/grafana/plugins
 ENV GF_PATHS_PLUGINS=$GF_PLUGIN_DIR
 ENV GF_PLUGINS_ALLOW_LOADING_UNSIGNED_PLUGINS=grafana-mongodb-datasource
