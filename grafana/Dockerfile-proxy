@@ -2,7 +2,7 @@ FROM alpine AS builder
 WORKDIR /tmp/build
 RUN wget -q -O master.zip https://github.com/JamesOsgood/mongodb-grafana/archive/master.zip && unzip master.zip && rm master.zip
 
-FROM node:18-slim
+FROM node:19-slim
 COPY --from=builder /tmp/build/mongodb-grafana-master /usr/src/mongografanaproxy
 WORKDIR /usr/src/mongografanaproxy
 RUN npm ci
