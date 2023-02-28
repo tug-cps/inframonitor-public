@@ -28,7 +28,7 @@ lazy-object-proxy==1.7.1
     # via astroid
 mccabe==0.7.0
     # via pylint
-mock==4.0.3
+mock==5.0.1
     # via -r test-requirements.in
 mongomock==4.1.2
     # via -r test-requirements.in
@@ -59,9 +59,7 @@ six==1.16.0
 soupsieve==2.3.2.post1
     # via beautifulsoup4
 tomli==2.0.1
-    # via
-    #   pylint
-    #   pytest
+    # via pytest
 tomlkit==0.11.4
     # via pylint
 urllib3==1.26.12
