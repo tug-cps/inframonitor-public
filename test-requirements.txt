@@ -4,7 +4,7 @@
 #
 #    pip-compile test-requirements.in
 #
-astroid==2.12.10
+astroid==2.15.4
     # via pylint
 attrs==22.1.0
     # via pytest
@@ -16,7 +16,7 @@ charset-normalizer==2.1.1
     # via requests
 coverage==6.4.4
     # via -r test-requirements.in
-dill==0.3.5.1
+dill==0.3.6
     # via pylint
 idna==3.4
     # via requests
@@ -42,7 +42,7 @@ pluggy==1.0.0
     # via pytest
 py==1.11.0
     # via pytest
-pylint==2.15.3
+pylint==2.17.3
     # via -r test-requirements.in
 pyparsing==3.0.9
     # via packaging
@@ -59,9 +59,7 @@ six==1.16.0
 soupsieve==2.3.2.post1
     # via beautifulsoup4
 tomli==2.0.1
-    # via
-    #   pylint
-    #   pytest
+    # via pytest
 tomlkit==0.11.4
     # via pylint
 urllib3==1.26.12
